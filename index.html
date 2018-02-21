@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<title>A Blog on Data Science</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+body {font-size: 125%}
+code { display: block; width: 90%; margin: auto; background:#F8F8FF; border:black solid 1px; white-space: pre-wrap;  word-break: break-all; padding:6px }
+img.b { display: block; width: 50%; margin: auto }
+img.bb { display: block; width: 90%; margin: auto }
+a.download { text-decoration: none }
+</style>
+<script src="/javascript.js"></script>
+<body class="w3-light-grey" onload="CreateArchive();intro_arrow();">
+
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32">
+  <h1><b>A Blog Template</b></h1>
+  <p>by Andrew Bradley<!--<span class="w3-tag">unknown</span>-->
+  </p>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div id="rollout" class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+
+    <!--
+    <img src="/w3images/woods.jpg" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b>TITLE HEADING</b></h3>
+      <h5>Title description, <span class="w3-opacity">April 7, 2014</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        </div>
+      </div>
+    </div>
+  -->
+
+  </div>
+
+  <!-- DIVIDER BETWEEN BLOG PREVIEWS
+
+  <hr>
+
+  -->
+
+  <!-- Blog entry
+  <div class="w3-card-4 w3-margin w3-white">
+  <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%">
+    <div class="w3-container">
+      <h3><b>BLOG ENTRY</b></h3>
+      <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  END BLOG ENTRIES -->
+</div>
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card-2 w3-margin w3-margin-top">
+  <img src="/face.png" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>Andrew Bradley</b></h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div><hr>
+
+  <!-- Posts -->
+  <div class="w3-card-2 w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Social Media</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li onclick="go_linkedin();" class="w3-padding-16" style="cursor: pointer;">
+        <img src="/logos/linkedin.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">LinkedIn</span><br>
+        <span>linkedin.com/in/abradley201</span>
+      </li>
+      <li onclick="go_twitter();" class="w3-padding-16" style="cursor: pointer;">
+        <img src="/logos/twitter.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Twitter</span><br>
+        <span>twitter.com/abradley201</span>
+      </li>
+      <li onclick="go_github();" class="w3-padding-16" style="cursor: pointer;">
+        <img src="/logos/github.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Github</span><br>
+        <span>github.com/abradley201</span>
+      </li>
+      <li class="w3-padding-16">
+        <img src="/logos/email.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Email</span><br>
+        <span>abradley201@gmail.com</span>
+      </li>
+      <a class='download' href="/Resume.pdf" download><li class="w3-padding-16">
+        <img src="/logos/resume.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Download</span><br>
+        <span>Resume.pdf</span>
+      </li></a>
+    </ul>
+  </div>
+  <hr>
+
+  <!-- Labels / tags -->
+  <div class="w3-card-2 w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Tags</h4>
+    </div>
+    <div class="w3-container w3-white">
+    <p id="tagp">
+      <!--<span class="w3-tag w3-black w3-margin-bottom">Travel</span>-->
+      <!--<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span>-->
+    </p>
+    </div>
+  </div>
+
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+  <button id='home_next' class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
+</footer>
+
+</body>
+</html>

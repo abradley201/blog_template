@@ -1,0 +1,41 @@
+<html>
+
+<head>
+<script src="upload_image.js">
+
+</script>
+</head>
+
+<body>
+
+  <center><div id="infoR"></div></center>
+
+
+<div id="Form" class="Form">
+
+
+      <table style="font-size:29" width="100%"><td width="100%" align="center">initialize new post</td><tr><td width="100%" align="center"><div class="portrait" id="portrait"><canvas id="drawnportrait" class="register" height="220px" width="700px"></canvas></div></td></tr></table>
+
+
+
+        <div class="uploadbutton" id="uploadbutton">
+        <form id='form-id' method="post" enctype="multipart/form-data">
+        <center><input type="file" class="thefiles" id="thefiles" name="thefiles" onchange="get_filename(this);PreviewImage();" /></center>
+        </form></div><br><br>
+
+
+        <center><button onclick="Register()">Upload</button></center>
+        <br><br><center><input id='password' type='password'></center>
+
+
+</div>
+
+
+
+
+
+</body>
+
+
+
+</html>

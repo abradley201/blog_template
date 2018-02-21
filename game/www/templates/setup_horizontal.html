@@ -1,0 +1,90 @@
+<ion-view title="Setup" id="pageH" hide-nav-bar="true">
+
+    <ion-content padding="true" scroll="true" class="home-header">
+
+      <div class="centering">
+	       <h2 style="text-align:center; bottom:75%">Setup Horizontal</h2>
+         <img height="15%" width="15%" src='images/rompinaround_logo.png'><br>
+      </div>
+
+      <form id="setup-form1" class="list">
+          <!--<label class="item item-input">
+            <span class="input-label">Participant Number</span>-->
+              <input id="setup-select4" class="input-values" type="hidden" pattern="\d*" maxlength="6" value="1">
+
+          <!--</label>
+          <label class="item item-input">
+              <span class="input-label">Session Number</span>-->
+              <input id="setup-select3" class="input-values" type="hidden" pattern="\d*" maxlength="6" value="1">
+
+          <!--</label>-->
+          <label class="item item-select">
+              <span class="input-label">Right/Left Handed</span>
+              <select id="setup-select1">
+                  <option value="Right">Right</option>
+                  <option value="Left">Left</option>
+              </select>
+          </label><br>
+          <!--<label class="item item-input">
+              <span class="input-label">Grip Span</span>-->
+              <input id="setup-select2" class="input-values" type="hidden" pattern="\d*" maxlength="6" value="0">
+
+          <!--</label>
+          <label class="item item-input">
+              <span class="input-label">Group</span>-->
+              <input id="setup-select_group" class="input-values" type="hidden" pattern="\d*" maxlength="6" value="0">
+          <!--</label>
+          <label class="item item-input">
+              <span class="input-label">Condition</span>-->
+              <input id="setup-select_condition" class="input-values" type="hidden" pattern="\d*" maxlength="6" value="0">
+          <!--</label>-->
+          <label class="item item-select" id="1D_Trials">
+              <span class="input-label">Number of Taps</span>
+              <select id="setup-select6">
+                <option value="4">4</option>
+                <option value-"5">5</option>
+                <option value="6">6</option>
+                <option value-"7">7</option>
+                <option value="8">8</option>
+                <option value-"9">9</option>
+                <option value="10">10</option>
+                <option value-"11">11</option>
+                <option value="12">12</option>
+                <option value-"13">13</option>
+                <option value="14">14</option>
+                <option value-"15">15</option>
+                <option value="16">16</option>
+                <option value-"17">17</option>
+                <option value="18">18</option>
+                <option value-"19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value-"22">22</option>
+                <option value="23">23</option>
+                <option value-"24">24</option>
+                <option value="25">25</option>
+              </select>
+          </label>
+          <label class="item item-input">
+              <span class="input-label">Distance Btw Targets</span>
+              <input id="setup-select8" onClick="this.setSelectionRange(0, this.value.length)" class="input-values" type="text" pattern="\d*" maxlength="6" value="200">
+
+          </label>
+          <label class="item item-input">
+              <span class="input-label">Target Width</span>
+              <input id="setup-select9" onClick="this.setSelectionRange(0, this.value.length)" class="input-values" type="text" pattern="\d*" maxlength="6" value="40">
+
+          </label>
+          <!--<ion-toggle ng-model="vm.foo" ng-checked="false" onchange="vm.setFoo()" class="mode-select" toggle-class="toggle-stable" id="setup-toggle1"><span class="input-label">Vibrotactile Feedback</span></ion-toggle>-->
+          <ion-toggle ng-model="vm.bar" ng-checked="false" onchange="vm.setBar()" class="mode-select" toggle-class="toggle-stable" id="setup-toggle2"><span class="input-label">Auditory Feedback</span></ion-toggle>
+          <div class="spacer" style="height: 100px;"></div>
+      </form>
+
+      <div class="bottom_buttons">
+        <button id="back_button" class="button button-positive" go-click="/home">Back</button>
+        <button id="go_button" class="button button-positive">Go</button>
+      </div>
+
+    </ion-content>
+
+</ion-view>

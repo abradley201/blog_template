@@ -1,0 +1,116 @@
+<html>
+
+<head>
+    <link href="http://code.ionicframework.com/1.0.0/css/ionic.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<ion-view title="Setup" id="page2" hide-nav-bar="true">
+    <ion-content padding="true" class="has-header">
+      <link type="text/css" rel="stylesheet" href="css/style.css">
+        <div id="setup-button-bar1" class="button-bar">
+            <button id="setup-button1" class="button button-dark  button-block">OK</button>
+            <button id="setup-button2" class="button button-dark  button-block">Save</button>
+            <button id="setup-button3" class="button button-dark  button-block" go-click="/home">Exit</button>
+        </div>
+        <form id="setup-form1" class="list">
+            <label class="item item-select">
+                <span class="input-label">Right or Left Handed</span>
+                <select id="setup-select1">
+                    <option value="Right">Right</option>
+                    <option value="Left">Left</option>
+                </select>
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Grip Span</span>
+                <input id="setup-select2" class="input-values" type="text" maxlength="3">
+
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Session Number</span>
+                <input id="setup-select3" class="input-values" type="number" placeholder="3" maxlength="3">
+
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Participant Number</span>
+                <input id="setup-select4" class="input-values" type="text" maxlength="3">
+
+            </label>
+            <ion-list>
+        <label class="item item-icon-left item-radio">
+          <input type="radio" name="group" id="setup-select5A" ng-model="D.dimension" ng-checked="false" onchange="D.setDim(1)">
+                    <div class="item-content">
+                    1D Mode (Rectangles)
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item  item-icon-left item-radio">
+                  <input type="radio" name="group" id="setup-select5B" ng-model="D.dimension" ng-checked="false" onchange="D.setDim(2)">
+                  <div class="item-content" id="asdasd">
+                    2D Mode (Circles)
+                </div>
+              <i class="radio-icon ion-checkmark"></i>
+              </label>
+            </ion-list>
+            <label class="item item-select" id="1D_Trials">
+                <span class="input-label">Number of Trials</span>
+                <select id="setup-select6">
+                  <option value="4">4</option>
+                  <option value-"5">5</option>
+                  <option value="6">6</option>
+                  <option value-"7">7</option>
+                  <option value="8">8</option>
+                  <option value-"9">9</option>
+                  <option value="10">10</option>
+                  <option value-"11">11</option>
+                  <option value="12">12</option>
+                  <option value-"13">13</option>
+                  <option value="14">14</option>
+                  <option value-"15">15</option>
+                  <option value="16">16</option>
+                  <option value-"17">17</option>
+                  <option value="18">18</option>
+                  <option value-"19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value-"22">22</option>
+                  <option value="23">23</option>
+                  <option value-"24">24</option>
+                  <option value="25">25</option>
+                </select>
+            </label>
+            <label class="item item-select" id="2D_Circles">
+                <span class="input-label">Number of Circles</span>
+                <select id="setup-select7">
+                    <option value-"5">5</option>
+                    <option value-"7">7</option>
+                    <option value-"9">9</option>
+                    <option value-"11">11</option>
+                    <option value-"13">13</option>
+                    <option value-"15">15</option>
+                    <option value-"17">17</option>
+                    <option value-"19">19</option>
+                    <option value="21">21</option>
+                    <option value="23">23</option>
+                    <option value="25">25</option>
+                </select>
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Target amplitude (A)</span>
+                <input id="setup-select8" class="input-values" type="text" maxlength="3">
+
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Target width (W)</span>
+                <input id="setup-select9" class="input-values" type="text" maxlength="3">
+
+            </label>
+            <ion-toggle ng-model="vm.foo" ng-checked="vm.foo" onchange="vm.setFoo()" class="mode-select" toggle-class="toggle-stable" id="setup-toggle1"><span class="input-label">Vibrotactile Feedback</span></ion-toggle>
+            <ion-toggle ng-model="vm.bar" ng-checked="vm.bar" onchange="vm.setBar()" class="mode-select" toggle-class="toggle-stable" id="setup-toggle2"><span class="input-label">Auditory Feedback</span></ion-toggle>
+            <div class="spacer" style="height: 100px;"></div>
+        </form>
+    </ion-content>
+</ion-view>
+</body>
+</html>
